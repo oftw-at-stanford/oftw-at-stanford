@@ -1,0 +1,35 @@
+@import "../colors";
+
+.hero {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background: $bg-light-grey;
+}
+.hero__text {
+  font-family: Quattrocento, serif;
+  grid-column: 1;
+  padding: 4 * $space;
+  // Allow more room for the image
+  margin-bottom: 8 * $space;
+}
+.hero__image {
+  grid-column: 2;
+  // Fill the whole right side
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.hero__heading {
+  font-size: 64px;
+  font-weight: bold;
+  margin-top: 0;
+}
+.hero__pledge-btn {
+  background: $bg-light-green;
+  border: 0;
+  font-family: Quattrocento, serif;
+  color: $fg-off-white;
+  font-size: 40px;
+  padding: $space $space * 2;
+  text-decoration: none;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>One for the World</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&family=Raleway&display=swap"
+    rel="stylesheet">
+  {{ $sass := resources.Get "sass/main.scss" }}
+  {{ $style := $sass | resources.ToCSS | resources.PostCSS | resources.Minify }}
+  <link rel="stylesheet" href="{{ $style.Permalink }}">
+</head>
+
+<body>
+  <nav class="nav">
+    One for the World
+
+    <ul class="nav__list">
+      <li>Blog</li>
+      <li>Ambassadors</li>
+      <li>About Us</li>
+      <li>Events</li>
+      <li>How to Get Involved</li>
+    </ul>
+  </nav>
+  <div class="site-container">
+    <div class="hero">
+      <div class="hero__text">
+        <h1 class="hero__heading">How many people will you help in your lifetime?</h1>
+
+        <a class="hero__pledge-btn" href="#">Take the Pledge</a>
+      </div>
+
+      <img class="hero__image" src="/images/hero.jpg" alt="A young boy being inspected by a caring woman.">
+    </div>
+  </div>
+</body>
+
+</html>
