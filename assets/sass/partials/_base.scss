@@ -1,8 +1,11 @@
+@import "../colors";
+
 // Remove default margins and padding
 html,
 body {
   padding: 0;
   margin: 0;
+  font-family: $sans-serif;
 }
 
 /* apply a natural box layout model to all elements, but allowing components to change */
