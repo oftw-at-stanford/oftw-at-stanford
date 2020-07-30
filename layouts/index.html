@@ -1,70 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
+{{ define "main" }}
+<section class="hero">
+  <div class="hero__text">
+    <h1 class="hero__heading">How many people will you help in your lifetime?</h1>
 
-<head>
-  <meta charset="utf-8">
-  <title>One for the World</title>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173624678-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-173624678-1');
-  </script>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&family=Raleway&display=swap"
-    rel="stylesheet">
-  {{ $sass := resources.Get "sass/main.scss" }}
-  {{ $style := $sass | resources.ToCSS | resources.PostCSS | resources.Minify }}
-  <link rel="stylesheet" href="{{ $style.Permalink }}">
-</head>
-
-<body>
-  <nav class="nav">
-    Stanford One for the World
-
-    <ul class="nav__list">
-      <li>Blog</li>
-      <li>Ambassadors</li>
-      <li>About Us</li>
-      <li>Events</li>
-      <li>How to Get Involved</li>
-    </ul>
-  </nav>
-  <div class="site-container">
-    <section class="hero">
-      <div class="hero__text">
-        <h1 class="hero__heading">How many people will you help in your lifetime?</h1>
-
-        <a class="hero__pledge-btn" href="#">Take the Pledge</a>
-      </div>
-
-      <img class="hero__image" src="/images/hero.jpg" alt="A young boy being inspected by a caring woman.">
-    </section>
-
-    <section class="stats">
-      <div>
-        <div class="stats__big-no">XX%</div>
-        attended
-      </div>
-      <div>
-        <div class="stats__big-no">XX%</div>
-        attended
-      </div>
-      <div>
-        <div class="stats__big-no">XX%</div>
-        attended
-      </div>
-    </section>
-
-    <section class="calendar">
-      <h2>Calendar</h2>
-      <iframe class="calendar__iframe"
-        src="https://outlook.office365.com/owa/calendar/05dad73e393b455087f406138870588e@stanford.edu/ebca586d2f8a4e0bac71d108e40d8fa812985586948716872231/calendar.html"></iframe>
-    </section>
+    <a class="hero__pledge-btn" href="#">Take the Pledge</a>
   </div>
-</body>
 
-</html>
+  <img class="hero__image" src="/images/hero.jpg" alt="A young boy being inspected by a caring woman.">
+</section>
+
+<section class="stats">
+  <div>
+    <div class="stats__big-no">XX%</div>
+    attended
+  </div>
+  <div>
+    <div class="stats__big-no">XX%</div>
+    attended
+  </div>
+  <div>
+    <div class="stats__big-no">XX%</div>
+    attended
+  </div>
+</section>
+
+<section class="calendar">
+  <h2>Calendar</h2>
+  <iframe class="calendar__iframe"
+    src="https://outlook.office365.com/owa/calendar/05dad73e393b455087f406138870588e@stanford.edu/ebca586d2f8a4e0bac71d108e40d8fa812985586948716872231/calendar.html"></iframe>
+</section>
+{{ end }}
