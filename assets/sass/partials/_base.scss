@@ -5,6 +5,8 @@ html,
 body {
   padding: 0;
   margin: 0;
+  height: 100%;
+
   font-size: 14px;
   font-family: $sans-serif;
   color: $fg-off-black;
@@ -19,4 +21,28 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+}
+
+// Base layout
+// The following flex layout is designed to always keep the footer at the
+// bottom of the page on short pages
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 100%;
+
+  .site-container {
+    flex-grow: 1;
+  }
+
+  .footer {
+    flex-shrink: 0;
+  }
+}
+
+.site-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }

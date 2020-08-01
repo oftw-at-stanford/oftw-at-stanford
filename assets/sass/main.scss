@@ -2,13 +2,10 @@
 
 @import "partials/base";
 @import "partials/nav";
-@import "partials/hero";
-@import "partials/pitch";
-@import "partials/stats";
-@import "partials/calendar";
+@import "partials/home/hero";
+@import "partials/home/pitch";
+@import "partials/home/stats";
+@import "partials/home/calendar";
+@import "partials/blog/blog";
 @import "partials/footer";
 
-.site-container {
-  max-width: 1200px;
-  margin: 0 auto;
-}

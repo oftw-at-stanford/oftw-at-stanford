@@ -22,41 +22,43 @@
 </head>
 
 <body>
-  <nav class="nav">
-    <a href="{{ .Site.BaseURL }}">Stanford One for the World</a>
+  <div class="page-container">
+    <nav class="nav">
+      <a href="{{ .Site.BaseURL }}">Stanford One for the World</a>
 
-    <ul class="nav__list">
-      <li>Blog</li>
-      <li>Ambassadors</li>
-      <li>About Us</li>
-      <li>Events</li>
-      <li>How to Get Involved</li>
-    </ul>
-  </nav>
-  <main class="site-container">
-    {{ block "main" . }}
-    {{ end }}
-  </main>
-  <footer class="footer">
-    <div class="footer__social">
-      <h2>Follow Us</h2>
+      <ul class="nav__list">
+        <li><a href="/blog">Blog</a></li>
+        <li>Ambassadors</li>
+        <li>About Us</li>
+        <li>Events</li>
+        <li>How to Get Involved</li>
+      </ul>
+    </nav>
+    <main class="site-container">
+      {{ block "main" . }}
+      {{ end }}
+    </main>
+    <footer class="footer">
+      <div class="footer__social">
+        <h2>Follow Us</h2>
 
-      <p>
-        <a href="TODO" title="Facebook"><i class="icon-facebook-official"></i></a>
-        <a href="TODO" title="Twitter"><i class="icon-twitter-squared"></i></a>
-        <i class="icon-rss-squared"></i>
-      </p>
-    </div>
-    <div class="footer__newsletter">
-      <h2>Subscribe to Our Newsletter</h2>
+        <p>
+          <a href="TODO" title="Facebook"><i class="icon-facebook-official"></i></a>
+          <a href="TODO" title="Twitter"><i class="icon-twitter-squared"></i></a>
+          <i class="icon-rss-squared"></i>
+        </p>
+      </div>
+      <div class="footer__newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
 
-      <p><i class="icon-mail-alt"></i></p>
-    </div>
-    <div class="footer__copyright">
-      &copy; 2020 Stanford One for the World &middot; <a
-        href="https://github.com/stanford-1ftw/stanford-1ftw">Source</a>
-    </div>
-  </footer>
+        <p><i class="icon-mail-alt"></i></p>
+      </div>
+      <div class="footer__copyright">
+        &copy; 2020 Stanford One for the World &middot; <a
+          href="https://github.com/stanford-1ftw/stanford-1ftw">Source</a>
+      </div>
+    </footer>
+  </div>
 </body>
 
 </html>
