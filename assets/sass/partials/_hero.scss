@@ -26,10 +26,18 @@
 }
 .hero__pledge-btn {
   background: $bg-light-green;
-  border: 0;
-  font-family: Quattrocento, serif;
   color: $fg-off-white;
-  font-size: 40px;
-  padding: $space $space * 2;
+
+  font-family: $sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.5em;
   text-decoration: none;
+
+  border: 0;
+  padding: 2 * $space 4 * $space;
+
+  &::after {
+    content: " ➝";
+  }
 }
