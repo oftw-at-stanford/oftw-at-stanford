@@ -9,7 +9,7 @@
   background: $bg-dark-blue;
   font-family: Raleway, sans-serif;
   padding: 2 * $space;
-  font-size: 32px;
+  font-size: 1.5em;
 
   a {
     color: inherit;
@@ -21,12 +21,13 @@
   // Remove default margin and padding
   margin: 0;
   padding: 0;
-  font-size: 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
 
   // Display list elements horizontally
   li {
     display: inline-block;
-    font-variant: small-caps;
-    margin-left: $space;
+    margin-left: 2 * $space;
   }
 }
