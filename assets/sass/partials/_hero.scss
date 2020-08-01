@@ -4,11 +4,14 @@
   display: grid;
   grid-template-columns: 50% 50%;
   background: $bg-light-grey;
+
+  outline: 3px solid $bg-dark-blue;
+  outline-offset: -3 * $space;
 }
 .hero__text {
   font-family: Quattrocento, serif;
   grid-column: 1;
-  padding: 4 * $space;
+  padding: 6 * $space;
   // Allow more room for the image
   margin-bottom: 8 * $space;
 }
@@ -18,6 +21,8 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
+  // Place it above the outline that creates the inset border around the text
+  z-index: 1;
 }
 .hero__heading {
   font-size: 64px;
