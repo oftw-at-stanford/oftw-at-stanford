@@ -1,0 +1,14 @@
+.team-bubbles {
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  margin: 1em 0;
+}
+.team-bubbles__member {
+  width: 400px;
+
+  a {
+    color: inherit;
+  }
+}

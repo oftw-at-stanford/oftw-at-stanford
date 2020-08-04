@@ -1,5 +1,0 @@
-baseURL = "/"
-languageCode = "en-us"
-title = "Stanford One for the World"
-# Always minify the HTML for maximum performance
-minify = true

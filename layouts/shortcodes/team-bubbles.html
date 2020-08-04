@@ -1,0 +1,10 @@
+<div class="team-bubbles">
+  {{ range .Site.Data.team }}
+  <div class="team-bubbles__member">
+    <img src="{{ .image }}" alt="">
+    <h3>{{ .name }}</h3>
+    <p>{{ .role }}</p>
+    <p><a href="mailto:{{ .email }}"><i class="icon-mail-alt"></i></a></p>
+  </div>
+  {{ end }}
+</div>
