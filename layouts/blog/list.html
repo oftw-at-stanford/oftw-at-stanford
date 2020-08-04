@@ -1,8 +1,7 @@
 {{ define "main" }}
-<ul>
-  <!-- Renders the li.html content view for each content/posts/*.md -->
-  {{ range .Pages }}
-  {{ .Render "li"}}
-  {{ end }}
-</ul>
+<h1>Blog</h1>
+<!-- Renders the li.html content view for each content/posts/*.md -->
+{{ range .Pages }}
+{{ .Render "li"}}
+{{ end }}
 {{ end}}
