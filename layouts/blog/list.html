@@ -1,7 +1,9 @@
 {{ define "main" }}
-<h1>Blog</h1>
+<h2 class="page-header">Blog</h2>
 <!-- Renders the li.html content view for each content/posts/*.md -->
-{{ range .Pages }}
-{{ .Render "li"}}
+<div class="blog-list">
+  {{ range .Pages }}
+  {{ .Render "li"}}
+  {{ end }}
+</div>
 {{ end }}
-{{ end}}

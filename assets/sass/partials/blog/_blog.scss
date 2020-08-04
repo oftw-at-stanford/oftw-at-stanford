@@ -3,3 +3,17 @@
 .blog {
   padding: 2 * $space;
 }
+
+// Styles for blog list
+.blog-list {
+  display: flex;
+  flex-direction: row wrap;
+}
+.blog-list-entry {
+  background: $bg-light-grey;
+  padding: 2 * $space;
+  width: 400px;
+}
+.blog-list-entry__read-more {
+  text-align: right;
+}
