@@ -4,7 +4,9 @@
     <img src="{{ .image }}" alt="">
     <h3>{{ .name }}</h3>
     <p>{{ .role }}</p>
-    <p><a href="mailto:{{ .email }}"><i class="icon-mail-alt"></i></a></p>
+    <!-- Processed using clipboard.js -->
+    <p><a class="clip tooltip" data-clipboard-text="{{ .email }}"><i class="icon-mail-alt"></i><span
+          class="tooltiptext">Copy to clipboard</span></a></p>
   </div>
   {{ end }}
 </div>
