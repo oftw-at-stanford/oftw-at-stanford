@@ -10,8 +10,8 @@ Stanford One for the World is a student group dedicated to ending extreme povert
 
 We are a chapter of [One for the World](https://www.1fortheworld.org/), an international nonprofit organization dedicated to this same purpose. Since 2014, One for the World has motivated thousands of students to take a pledge to donate 1% of their income and has donated over $750,000 to effective charities.
 
-## Our Team
+## Meet Our Executive Team
 
-We currently have 8 members. If you'd like to get involved, please contact [Emma Williamson](mailto:emma123@stanford.edu) or [Jiahui Chen](mailto:jchen23@stanford.edu)!
+If you'd like to get involved, please contact [Emma Williamson](mailto:emma123@stanford.edu) or [Jiahui Chen](mailto:jchen23@stanford.edu)!
 
 {{< team-bubbles >}}
