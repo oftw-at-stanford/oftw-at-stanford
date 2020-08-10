@@ -7,12 +7,14 @@
 - name: Keona Blanks
   role: Communications Coordinator
   email: kjblanks@stanford.edu
+  pic: /images/team/keona.png
 - name: Stanley Cao
   role: Head of Operations
   email: stancao@stanford.edu
 - name: Kevin Liu
   role: Website Manager
   email: liuk@stanford.edu
+  pic: /images/team/kevin.png
 - name: Carolyn Ky
   role: Events Coordinator
   email: kcarolyn@stanford.edu

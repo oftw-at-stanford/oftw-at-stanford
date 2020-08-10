@@ -1,7 +1,7 @@
 <div class="team-bubbles">
   {{ range .Site.Data.team }}
   <div class="team-bubbles__member">
-    <img src="{{ .image }}" alt="">
+    <img src="{{ .pic }}" class="team-bubbles__image" alt="" width="160" height="160">
     <h3>{{ .name }}</h3>
     <p>{{ .role }}</p>
     <!-- Processed using clipboard.js -->
