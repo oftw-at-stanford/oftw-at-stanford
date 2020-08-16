@@ -1,17 +1,26 @@
 @import "../_colors";
 
+.footer-container {
+  background: $fg-off-black;
+}
+
 .footer {
   color: $fg-off-white;
-  background: $fg-off-black;
-  padding: 2 * $space calc(50% - 400px);
+  width: $site-width;
+  max-width: 100%;
+  padding: 2 * $space;
+  margin: 0 auto;
 
   // Layout
-  display: grid;
-  grid-template-columns: 50% 50%;
+  @media (min-width: $crunch-width) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
 
   .footer__social,
   .footer__newsletter {
     text-transform: uppercase;
+    margin-bottom: 1em;
   }
 
   // Shrink footer headings a bit
