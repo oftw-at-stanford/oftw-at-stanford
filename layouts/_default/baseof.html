@@ -28,13 +28,21 @@
     <nav class="nav">
       <a href="{{ .Site.BaseURL }}">Stanford One for the World</a>
 
-      <ul class="nav__list">
+      <button class="nav__hamburger" id="nav__hamburger">☰</button>
+
+      <ul class="nav__list nav__list--mobile-hidden">
         <li><a href="/blog">Blog</a></li>
         <li><a href="/ambassadors">Ambassadors</a></li>
         <li><a href="/about">About Us</a></li>
         <li>Events</li>
         <li>How to Get Involved</li>
       </ul>
+      <script>
+        const list = document.getElementsByClassName("nav__list")[0];
+        document.getElementById("nav__hamburger").addEventListener("click", () => {
+          list.classList.toggle("nav__list--mobile-hidden");
+        });
+      </script>
     </nav>
     <main class="site-container">
       {{ block "main" . }}

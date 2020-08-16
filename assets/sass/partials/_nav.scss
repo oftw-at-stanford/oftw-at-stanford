@@ -1,10 +1,12 @@
 @import "_colors.scss";
 
 .nav {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
+  @media (min-width: 900px) {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
   color: $fg-off-white;
   background: $bg-dark-blue;
   font-family: Raleway, sans-serif;
@@ -24,10 +26,38 @@
   font-size: 1rem;
   font-weight: bold;
   text-transform: uppercase;
+  text-align: right;
 
-  // Display list elements horizontally
   li {
+    @media not screen and (min-width: 900px) {
+      display: block;
+      margin-top: 2em;
+      text-align: center;
+    }
+
+    // Display list elements horizontally on large screen
     display: inline-block;
     margin-left: 2 * $space;
+  }
+}
+
+.nav__hamburger {
+  display: none; // when not on mobile
+}
+
+@media not screen and (min-width: 900px) {
+  .nav__list--mobile-hidden {
+    display: none;
+  }
+  .nav__hamburger {
+    display: block;
+    position: absolute;
+    border: 0;
+    background-color: inherit;
+    color: inherit;
+    font-size: 1.5em;
+    // HACK this is pretty janky alignment, but it works!
+    right: 1 * $space;
+    top: 0.5 * $space;
   }
 }
