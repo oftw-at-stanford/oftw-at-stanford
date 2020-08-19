@@ -11,6 +11,8 @@
   }
   background: #192640;
   color: $fg-off-white;
+  // For image-credit below which is absolutely positioned
+  position: relative;
 }
 .hero__text {
   font-family: Quattrocento, serif;
@@ -20,11 +22,6 @@
   margin-bottom: 8 * $space;
 }
 .hero__image {
-  // Hide hero image on small screens
-  @media (max-width: $crunch-width) {
-    display: none;
-  }
-
   grid-column: 2;
   // Fill the whole right side
   height: 100%;
@@ -35,6 +32,25 @@
   // Create a gradient from the side
   mask: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 10%);
 }
+.hero__image-credit {
+  position: absolute;
+  right: 0;
+  // magic.
+  bottom: -1.75em;
+  margin: 0;
+  padding: 2px;
+  font-size: 0.75em;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+// Hide hero image on small screens
+@media (max-width: $crunch-width) {
+  .hero__image,
+  .hero__image-credit {
+    display: none;
+  }
+}
+
 .hero__heading {
   font-size: 64px;
   font-weight: bold;
