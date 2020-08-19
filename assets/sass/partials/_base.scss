@@ -32,7 +32,7 @@ html {
   align-items: stretch;
   height: 100%;
 
-  .site-container {
+  .main-container {
     flex-grow: 1;
   }
 
@@ -41,11 +41,19 @@ html {
   }
 }
 
-.site-container {
+// Main container: holds contents at the max width of the site's main
+// content (currently 1200px)
+.main-container {
   width: 100%;
   max-width: $site-width;
   margin: 0 auto;
   background-color: $fg-off-white;
+}
+// Padded container to hold any content that shouldn't directly touch the
+// edge of the site main content.
+// This is useful e.g. for text, but not for a full-width image spread.
+.main-container__padded {
+  padding: 0 3 * $space;
 }
 
 .page-header {
