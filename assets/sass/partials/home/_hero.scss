@@ -9,7 +9,7 @@
     outline: 3px solid $bg-light-grey;
     outline-offset: -3 * $space;
   }
-  background: #192640;
+  background: $bg-darker-blue;
   color: $fg-off-white;
   // For image-credit below which is absolutely positioned
   position: relative;

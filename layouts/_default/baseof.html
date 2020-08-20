@@ -26,7 +26,7 @@
 <body>
   <div class="page-container">
     <nav class="nav">
-      <a href="{{ .Site.BaseURL }}">Stanford One for the World</a>
+      <a class="nav__title" href="{{ .Site.BaseURL }}">Stanford One for the World</a>
 
       <button class="nav__hamburger" id="nav__hamburger">☰</button>
 
@@ -34,8 +34,8 @@
         <li><a href="/blog">Blog</a></li>
         <li><a href="/ambassadors">Ambassadors</a></li>
         <li><a href="/about">About Us</a></li>
-        <li>Events</li>
-        <li>How to Get Involved</li>
+        <li><a href="#calendar">Events</a></li>
+        <li><a href="/involved">How to Get Involved</a></li>
       </ul>
       <script>
         const list = document.getElementsByClassName("nav__list")[0];
