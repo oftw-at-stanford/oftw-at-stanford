@@ -7,3 +7,23 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+menu:
+  main:
+    - name: Home
+      url: /
+      weight: 1
+    - name: How to Get Involved
+      url: /involved/
+      weight: 2
+    - name: Ambassadors
+      url: /ambassadors/
+      weight: 3
+    - name: About Us
+      url: /about/
+      weight: 4
+    - name: Blog
+      url: /blog/
+      weight: 5
+    - name: Events
+      url: /events/
+      weight: 6
