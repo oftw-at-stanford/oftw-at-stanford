@@ -7,6 +7,10 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+module:
+  mounts:
+  - source: ./node_modules/@fortawesome/fontawesome-free/webfonts
+    target: static/sass/webfonts
 menu:
   main:
     - name: Home
