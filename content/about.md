@@ -11,6 +11,6 @@ We are a chapter of [One for the World](https://www.1fortheworld.org/), an inter
 
 ## Meet Our Executive Team
 
-If you'd like to get involved, please contact [Emma Williamson](mailto:emma123@stanford.edu) or [Jiahui Chen](mailto:jchen23@stanford.edu)!
+Want to get involved? Sign up for a [virtual coffee chat <i class="fa fa-coffee"></i>](http://eepurl.com/haZea1)!
 
 {{< team-bubbles >}}
