@@ -66,7 +66,8 @@
         {{ end }}
         {{ end }}
         <li>
-          <a href="{{ .Site.Data.links.instagram }}" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="{{ .Site.Data.links.instagram }}" title="Follow us on Instagram" target="_blank"
+            rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
         </li>
         <li>
           <a href="{{ .Site.Data.links.newsletter }}" title="Subscribe to our newsletter"><i
@@ -90,7 +91,9 @@
           <h2>Follow Us</h2>
 
           <p>
-            <a href="{{ .Site.Data.links.instagram }}" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="{{ .Site.Data.links.instagram }}" title="Instagram"><i class="fab fa-instagram"></i></a> <a
+              href="{{ .Site.Data.links.newsletter }}" title="Subscribe to our newsletter"><i
+                class="fas fa-envelope"></i></a>
           </p>
         </div>
         <div class="footer__newsletter">
