@@ -1,0 +1,88 @@
+// Shows text as a gradient from start to end
+@mixin text-gradient($start-color, $end-color) {
+  color: $start-color;
+  background-image: linear-gradient(90deg, $start-color, $end-color);
+  background-size: 100%;
+  background-clip: text;
+  // This property is highly non-standard, but it should be fine
+  // If a browser doesn't support it, then it will fall back to a solid color
+  // https://caniuse.com/#search=text-fill
+  -webkit-text-fill-color: transparent;
+}
+
+.pledge {
+  // Let's jazz up the font spacing a little.
+  font-size: 2em;
+  margin: 0 2em;
+  line-height: 1.5;
+  font-family: Ubuntu;
+  p {
+    margin-bottom: 2em;
+  }
+
+  .highlight {
+    background-color: #aad3ff;
+    display: inline-block;
+    padding: 0 0.25em;
+  }
+
+  // Below are tiny classes, used to add small flourishes in the final page
+  .blue {
+    @include text-gradient(#286cb4, #6eb5ff);
+  }
+  .darkblue {
+    @include text-gradient(#5a4ea1, #8276c4);
+  }
+  .darkgreen {
+    @include text-gradient(#3f7545, #5d9664);
+  }
+  .green {
+    @include text-gradient(#4ead59, #68ce74);
+  }
+  .darkred {
+    @include text-gradient(#b43a3a, #da6565);
+  }
+  .red {
+    @include text-gradient(#dd4545, #e06868);
+  }
+
+  .malaria {
+    font-family: "Walter Turncoat", cursive;
+  }
+  .deworming {
+    font-family: Pacifico, cursive;
+  }
+
+  .charity-info {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .one {
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  .take {
+    border-radius: 0.25em;
+    background: linear-gradient(90deg, #5a4ea1, #8276c4);
+    font-weight: bold;
+    font-size: 2em;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    padding: 0.25em;
+  }
+
+  .feedback {
+    opacity: 0.75;
+    font-size: 0.75em;
+  }
+}
+
+.pledge__graphic {
+  float: right;
+  width: 400px;
+  display: none;
+}

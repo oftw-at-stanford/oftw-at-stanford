@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>{{ block "title" . }}{{ with .Title }}{{ . }} &middot; {{ end }}{{ .Site.Title }}{{ end }}</title>
-  
+
   {{ range .AlternativeOutputFormats -}}
   {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
   {{ end -}}
@@ -26,6 +26,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&family=Raleway&display=swap"
     rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Walter+Turncoat&display=swap" rel="stylesheet">
   {{ $sass := resources.Get "sass/main.scss" }}
   {{ $style := $sass | resources.ToCSS | resources.PostCSS | resources.Minify }}
   <link rel="stylesheet" href="{{ $style.Permalink }}">
