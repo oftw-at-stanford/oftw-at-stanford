@@ -5,6 +5,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Favicons -->
+  <!-- Based off of https://realfavicongenerator.net code -->
+  {{ $favicon := resources.Get "images/favicon.png" }}
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ with $favicon.Resize "180x180" }}{{ .Permalink }}{{ end }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ with $favicon.Resize "32x32" }}{{ .Permalink }}{{ end }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ with $favicon.Resize "16x16" }}{{ .Permalink }}{{ end }}">
+
   <title>{{ block "title" . }}{{ with .Title }}{{ . }} &middot; {{ end }}{{ .Site.Title }}{{ end }}</title>
 
   {{ range .AlternativeOutputFormats -}}
