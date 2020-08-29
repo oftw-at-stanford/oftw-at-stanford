@@ -12,16 +12,17 @@
 
 .pledge {
   // Let's jazz up the font spacing a little.
-  font-size: 2em;
+  font-size: 1.5em;
   margin: 0 2em;
-  line-height: 1.5;
+  line-height: 1.25;
   font-family: Ubuntu;
+
   p {
-    margin-bottom: 2em;
+    margin: 1.5em 0;
   }
 
   .highlight {
-    background-color: #aad3ff;
+    background-color: #9ce8f1;
     display: inline-block;
     padding: 0 0.25em;
   }
@@ -31,7 +32,7 @@
     @include text-gradient(#286cb4, #6eb5ff);
   }
   .darkblue {
-    @include text-gradient(#5a4ea1, #8276c4);
+    @include text-gradient($bg-dark-blue, #596c94);
   }
   .darkgreen {
     @include text-gradient(#3f7545, #5d9664);
@@ -64,7 +65,7 @@
 
   .take {
     border-radius: 0.25em;
-    background: linear-gradient(90deg, #5a4ea1, #8276c4);
+    background: linear-gradient(90deg, #4ead59, #68ce74);
     font-weight: bold;
     font-size: 2em;
     display: block;
@@ -78,6 +79,23 @@
   .feedback {
     opacity: 0.75;
     font-size: 0.75em;
+  }
+
+  .section {
+    padding: 0 1em;
+    overflow: auto;
+  }
+
+  .section-oftw {
+    @extend .section;
+    background: #d7e3f1;
+    border-top: 8px solid $bg-dark-blue;
+  }
+
+  .section-pledge {
+    @extend .section;
+    background: #e3f1d7;
+    border-top: 8px solid $bg-light-green;
   }
 }
 
