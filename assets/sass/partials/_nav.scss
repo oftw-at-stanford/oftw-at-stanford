@@ -55,7 +55,7 @@
 }
 
 // Crunch width display
-@media not screen and (min-width: 900px) {
+@media not screen and (min-width: $crunch-width) {
   .nav {
     flex-flow: column nowrap;
     align-items: flex-start;
