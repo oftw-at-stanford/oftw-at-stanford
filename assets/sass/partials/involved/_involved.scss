@@ -1,0 +1,72 @@
+.involved-container {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.involved-header {
+  text-align: center;
+}
+
+.involved-list {
+  list-style: none;
+
+  // Following counter allows for a custom list item indicator, a la
+  // https://css-tricks.com/style-list-markers-css/
+  counter-reset: involved-list-counter;
+
+  li {
+    counter-increment: involved-list-counter;
+    margin-bottom: 0.5em;
+    margin-left: 2em;
+    position: relative;
+
+    &::before {
+      content: counter(involved-list-counter);
+      font-size: 2em;
+
+      border-radius: 50%;
+      border: 2px solid;
+      width: 1.5em;
+      height: 1.5em;
+      line-height: 1.25em; // hack
+      text-align: center;
+      margin-right: 0.5em;
+      display: inline-block;
+
+      position: absolute;
+      top: 0;
+      left: -2em;
+    }
+
+    h2 {
+      // hack to get h2 to be roughly centered
+      padding-top: 0.25em;
+    }
+  }
+
+  li:nth-of-type(1) {
+    color: #435d92;
+    &::before {
+      border-color: currentColor;
+      background: #d6e2ef;
+    }
+  }
+  li:nth-of-type(2) {
+    color: $bg-dark-blue;
+    &::before {
+      border-color: currentColor;
+      background: #d6e2ef;
+    }
+  }
+  li:nth-of-type(3) {
+    color: $bg-light-green;
+    &::before {
+      border-color: currentColor;
+      background: #cfe7b0;
+    }
+  }
+
+  a {
+    color: inherit;
+  }
+}
