@@ -19,7 +19,7 @@ Ambassadors will also be featured on our website, either as a club ambassador, d
 
 Ambassadors simply need to complete these three simple tasks to become ambassadors.
 
-1. Attend an ambassador training workshop. (Coming soon -- [follow us](https://eepurl.com/haZea1) to stay in touch!)
+1. Meet with [Carolyn or Keona](/about/) to express your interest!
 2. [Take the pledge](/pledge/) and get three friends to take the pledge.
 3. Fill out [this form](https://docs.google.com/forms/d/e/1FAIpQLSe3rtFY2RIbRr1xaitWKnXGfaG5Wti5dG4NBzB8buDdy1lzhg/viewform?usp=sf_link).
 
