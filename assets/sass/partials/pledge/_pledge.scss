@@ -68,12 +68,16 @@
     background: linear-gradient(90deg, #4ead59, #68ce74);
     font-weight: bold;
     font-size: 2em;
-    display: block;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
     color: white;
-    padding: 0.25em;
+    padding: 0.25em 0.5em;
+    word-break: keep-all;
+    @media (max-width: 1200px) {
+      display: block;
+      clear: both;
+    }
   }
 
   .feedback {
@@ -102,5 +106,6 @@
 .pledge__graphic {
   float: right;
   width: 400px;
-  display: none;
+  margin: 1em;
+  font-size: 0.75em;
 }

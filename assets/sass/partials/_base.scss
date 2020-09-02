@@ -23,6 +23,11 @@ html {
   box-sizing: inherit;
 }
 
+// Responsive images
+img {
+  max-width: 100%;
+}
+
 // Base layout
 // The following flex layout is designed to always keep the footer at the
 // bottom of the page on short pages
