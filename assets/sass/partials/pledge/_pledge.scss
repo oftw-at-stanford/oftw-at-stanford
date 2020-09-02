@@ -29,16 +29,16 @@
 
   // Below are tiny classes, used to add small flourishes in the final page
   .blue {
-    @include text-gradient(#286cb4, #6eb5ff);
+    @include text-gradient(#1b324b, #46719e);
   }
   .darkblue {
     @include text-gradient($bg-dark-blue, #596c94);
   }
   .darkgreen {
-    @include text-gradient(#3f7545, #5d9664);
+    @include text-gradient(#284d2c, #447049);
   }
   .green {
-    @include text-gradient(#4ead59, #68ce74);
+    @include text-gradient(#367a3e, #53a35c);
   }
   .darkred {
     @include text-gradient(#b43a3a, #da6565);
