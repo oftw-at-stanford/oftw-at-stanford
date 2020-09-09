@@ -30,10 +30,16 @@
 
     gtag('config', 'UA-173624678-1');
   </script>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&family=Raleway&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Walter+Turncoat&display=swap" rel="stylesheet">
+  
+  {{ $fonts := slice }}
+  {{ range .Site.Params.google_fonts }}
+    {{ $family := replace (index (.)  0) " " "+" }}
+    {{ $weights := replace (index (.) 1) " " "" }}
+    {{ $string := print $family ":" $weights }}
+    {{ $fonts = $fonts | append $string }}
+  {{ end }}
+  {{ $url_part := (delimit $fonts "|") | safeHTMLAttr }}
+
   {{ $sass := resources.Get "sass/main.scss" }}
   {{ $style := $sass | resources.ToCSS | resources.PostCSS | resources.Minify }}
   <link rel="stylesheet" href="{{ $style.Permalink }}">

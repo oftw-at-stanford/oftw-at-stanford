@@ -15,7 +15,7 @@
   font-size: 1.5em;
   margin: 0 2em;
   line-height: 1.25;
-  font-family: Ubuntu;
+  font-family: Raleway, sans-serif;
 
   p {
     margin: 1.5em 0;
@@ -74,6 +74,8 @@
     color: white;
     padding: 0.25em 0.5em;
     word-break: keep-all;
+    font-family: Fira Sans, sans-serif;
+
     @media (max-width: 1200px) {
       display: block;
       clear: both;
