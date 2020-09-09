@@ -30,13 +30,13 @@
 
     gtag('config', 'UA-173624678-1');
   </script>
-  
+
   {{ $fonts := slice }}
   {{ range .Site.Params.google_fonts }}
-    {{ $family := replace (index (.)  0) " " "+" }}
-    {{ $weights := replace (index (.) 1) " " "" }}
-    {{ $string := print $family ":" $weights }}
-    {{ $fonts = $fonts | append $string }}
+  {{ $family := replace (index (.)  0) " " "+" }}
+  {{ $weights := replace (index (.) 1) " " "" }}
+  {{ $string := print $family ":" $weights }}
+  {{ $fonts = $fonts | append $string }}
   {{ end }}
   {{ $url_part := (delimit $fonts "|") | safeHTMLAttr }}
 
@@ -145,7 +145,7 @@
   <script>
     new ClipboardJS('.clip');
   </script>
-  <script src="https://embed.small.chat/T016S7A9JS2G0195D7A1DZ.js" async></script>
+  <script src="https://embed.small.chat/T016S7A9JS2G01A5SWBNBY.js" async></script>
 </body>
 
 </html>
