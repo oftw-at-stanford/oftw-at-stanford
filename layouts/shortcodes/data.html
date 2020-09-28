@@ -1,0 +1,2 @@
+{{/* Usage: {{< data "file" "value" }} */}}
+{{ index (index .Site.Data (.Get 0)) (.Get 1) }}

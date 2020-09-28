@@ -11,6 +11,6 @@ We are a chapter of [One for the World](https://www.1fortheworld.org/), an inter
 
 ## Meet Our Executive Team
 
-Want to get involved? Sign up for a [virtual coffee chat <i class="fa fa-coffee"></i>](http://eepurl.com/haZea1)!
+Want to get involved? Sign up for a [virtual coffee chat <i class="fa fa-coffee"></i>]({{< data "links" "newsletter" >}})!
 
 {{< team-bubbles >}}
