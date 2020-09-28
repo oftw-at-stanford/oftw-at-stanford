@@ -1,6 +1,6 @@
 baseURL: "/"
 languageCode: "en-us"
-title: "Stanford One for the World"
+title: "One for the World @ Stanford"
 markup:
   goldmark:
     renderer:

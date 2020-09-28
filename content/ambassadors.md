@@ -7,7 +7,7 @@ identifier: ambassadors # for menu
 
 ## What are ambassadors?
 
-Ambassadors are individuals that have been accepted to promote the Stanford One For the World message and encourage others to take the pledge.
+Ambassadors are individuals that have been accepted to promote the {{< data "site" "name" >}} message and encourage others to take the pledge.
 
 ## What are the perks of being an ambassador?
 
