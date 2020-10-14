@@ -1,0 +1,25 @@
+.meter-section {
+  h2 {
+    text-align: center;
+  }
+}
+
+.meter {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 20px,
+    rgba(0, 0, 0, 0.2) 20px,
+    rgba(0, 0, 0, 0.2) 40px
+  );
+  .meter__bar {
+    width: 38%;
+    height: 2em;
+    background: linear-gradient(
+      90deg,
+      rgba(131, 58, 180, 0.6) 0%,
+      rgba(253, 29, 29, 0.6) 50%,
+      rgba(252, 176, 69, 0.6) 100%
+    );
+  }
+}
