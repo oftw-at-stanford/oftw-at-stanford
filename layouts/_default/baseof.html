@@ -39,7 +39,7 @@
   {{ $fonts = $fonts | append $string }}
   {{ end }}
   {{ $url_part := (delimit $fonts "|") | safeHTMLAttr }}
-
+  <link {{ printf "href=\"//fonts.googleapis.com/css?family=%s\"" $url_part | safeHTMLAttr }} rel="stylesheet">
   {{ $sass := resources.Get "sass/main.scss" }}
   {{ $style := $sass | resources.ToCSS | resources.PostCSS | resources.Minify }}
   <link rel="stylesheet" href="{{ $style.Permalink }}">
