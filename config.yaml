@@ -7,10 +7,10 @@ markup:
       unsafe: true
 module:
   mounts:
-  - source: ./node_modules/@fortawesome/fontawesome-free/webfonts
-    target: static/webfonts
-  - source: ./static
-    target: static
+    - source: ./node_modules/@fortawesome/fontawesome-free/webfonts
+      target: static/webfonts
+    - source: ./static
+      target: static
 menu:
   main:
     - name: Home
@@ -25,9 +25,9 @@ menu:
     - name: About Us
       url: /about/
       weight: 4
-    # - name: Blog
-    #   url: /blog/
-    #   weight: 5
+    - name: Blog
+      url: /blog/
+      weight: 5
     - name: Events
       url: /events/
       weight: 6
