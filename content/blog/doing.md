@@ -5,7 +5,6 @@ date: 2020-11-20T15:19:49-05:00
 draft: false
 ---
 
-
 What is something you want to accomplish but feel worried that you won’t be able to accomplish? Maybe it’s changing the world. Helping people. Maybe it’s just getting out of bed right when your alarm goes off so you have time to take a shower before your first class. Whatever the thing is that you are thinking of, I bet it has these two characteristics:
 
 1. It’s in the future.
@@ -17,7 +16,9 @@ So why do we put off helping others?
 
 You might think that you need to wait until you have more money or power. But why can't you start right now? If you want to do good, start doing _something_, and then overcome your challenges as they arise. Don’t create challenges in your mind that don’t exist in reality. You can start by pledging a tiny portion of your income to charity. Stop reading and take concrete action. By spending five minutes right now, you set yourself on the path of altruism and kindness.
 
-[![Take the pledge!](/images/blog/pledge-btn.png)](/pledge/)
+<div style="text-align: center">
+    <a href="/pledge/"><img src="/images/blog/pledge-btn.png" alt="Take the pledge!"></a>
+</div>
 
 ---
 
