@@ -18,6 +18,8 @@ So why do we put off helping others?
 
 You might think that you need to wait until you have more money or power. But why can't you start right now? If you want to do good, start doing _something_, and then overcome your challenges as they arise. Don’t create challenges in your mind that don’t exist in reality. You can start by pledging a tiny portion of your income to charity. Stop reading and take concrete action. By spending five minutes right now, you set yourself on the path of altruism and kindness.
 
+[![Take the pledge!](/images/blog/pledge-btn.png)](/pledge/)
+
 ---
 
 Now that you’re back, I want to reiterate the two conditions of any goal or desire:
