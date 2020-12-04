@@ -1,7 +1,7 @@
 {{ define "main" }}
 <article class="blog main-container__padded">
   <h1 class="page-header">{{ .Title }}</h1>
-  <p>Published on <time datetime='{{ .Date.Format "2006-01-02T15:04:05Z0700" }}'>{{ .Date.Format "Monday, January 2, 2006" }}</time></p>
+  <p>Published by {{ .Params.author }} on <time datetime='{{ .Date.Format "2006-01-02T15:04:05Z0700" }}'>{{ .Date.Format "Jan 2, 2006" }}</time></p>
 
   <hr>
 

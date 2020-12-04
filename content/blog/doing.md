@@ -1,6 +1,7 @@
 ---
 title: Doing
 author: Lucas Pfeifer
+description: What is something you want to accomplish but feel worried that you won’t be able to accomplish? Maybe it’s changing the world. Helping people. Maybe it’s just getting out of bed right when your alarm goes off so you have time to take a shower before your first class. Whatever the thing is that you are thinking of, I bet it has these two characteristics.
 date: 2020-11-20T15:19:49-05:00
 draft: false
 ---

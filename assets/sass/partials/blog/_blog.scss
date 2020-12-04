@@ -1,7 +1,26 @@
 @import "../../colors";
 
+.page-header {
+  padding: 0 8 * $space;
+}
+
 .blog {
-  padding: 2 * $space;
+  padding: 0 8 * $space;
+  padding-bottom: 8 * $space;
+  font-size: 1.25em;
+
+  .page-header {
+    padding: 0;
+  }
+
+  // Nicer hr tag
+  /* Inset, by Dan Eden */
+  hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
 }
 
 // Styles for blog list
@@ -10,10 +29,14 @@
   flex-direction: row wrap;
 }
 .blog-list-entry {
-  background: $bg-light-grey;
-  padding: 2 * $space;
-  width: 400px;
+  padding: 2 * $space 8 * $space;
+  background: $grey-4;
+
+  &:nth-child(odd) {
+    background: $grey-3;
+  }
 }
+
 .blog-list-entry__read-more {
   text-align: right;
 }
